@@ -25,7 +25,7 @@ class Scripts {
         buttonClick.click()
         val imgWeb: WebElement =
             wait.until(visibilityOfElementLocated(By.xpath("/html/body/gradio-app/div/div/div[1]/div/div/div[4]/button/div/img")))
-
+        driver.quit()
         return imgWeb.getAttribute("src")
     }
 
